@@ -1,0 +1,37 @@
+body{
+    background-color:wheat;
+}
+
+.btn {
+
+    color: lightblue;
+    background-color: brown;
+
+    color: violet;
+    background-color: yellow;
+
+    color: tomato;
+    background-color: thistle;
+
+    color: slategrey;
+    background-color: springgreen;
+
+    display: block;
+    padding: 10px 10px;
+    margin: 100px auto;
+    border: 3px solid pink;
+    border-radius: 9px;
+
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+}
+
+.btn:hover {
+    border: 5px solid black;
+    font-weight: normal;
+    background-color: blueviolet;
+    color: lightblue;
+}

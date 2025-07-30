@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<style>
+    .container {
+        color: blueviolet;
+        font-size: 20px;
+    }
+
+    .container:hover {
+        color: rgb(243, 40, 125);
+        font-size: 25px;
+
+    }
+</style>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About US</li>
+            <li>Sign Up</li>
+            <li>Contact US</li>
+            <li>Know MOre about us</li>
+        </ul>
+    </div>
+    <div class="container">
+        <li>ppppppp</li>
+        <li class="pp">jiiiii</li>
+        another BOx
+    </div>r
+
+    <script>
+        //let a = document.getElementsByClassName("container");
+        let main = document.getElementById("main");
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        console.log(nav.innerHTML);
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+        console.log(container[0]);
+        console.log(container[1]);
+
+        let sel = document.querySelector('#nav>li');
+        console.log("selector return  ", sel);
+
+        let allsel = document.querySelectorAll("#nav>li");
+        console.log("querySelectorAll = ",allsel);
+
+
+    </script>
+</body>
+
+</html>
