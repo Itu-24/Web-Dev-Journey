@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dummy creator</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="box w-[100vw] h-[100vh] bg-red-200 border-2 flex flex-row justify-center items-center">
+
+        <button id="btn"
+            class=" bg-pink-600 w-3xs cursor-pointer border-2 font-bold border-r-black p-3 rounded-2xl ">Generate</button>
+
+    </div>
+
+
+</body>
+<script>
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click',async () => {
+
+       
+
+        const response= await fetch('/createdummy');
+        const data= await response.json();
+        console.log(data);
+       
+    })
+
+</script>
+
+</html>
