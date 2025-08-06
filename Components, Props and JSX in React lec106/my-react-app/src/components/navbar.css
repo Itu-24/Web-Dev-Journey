@@ -1,0 +1,17 @@
+nav{
+
+    background-color: beige;
+    /* border: 2px solid black; */
+    /* height: 10vh; */
+    display: flex;
+    /* align-items: center; */
+    padding: 15px;
+}
+nav ul{
+    display: flex;
+    gap: 15px;
+}
+nav ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
